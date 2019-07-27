@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/fonts/roboto.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- style -->
+
+  <title>Phishman</title>
+
+</head>
+
+
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="navbar-container position-absolute">
+      <nav class="navbar">
+        <a class="navbar-brand col-3 d-flex" href="#"><img src="./img/logo.png" alt=""></a>
+        <form class="col-5 d-flex">
+          <button class="btn" type="submit"></button>
+          <input class="form-control" type="search" placeholder="Поиск..." aria-label="Search">
+        </form>
+        <div class="user_menu col-4 row">
+          <div class="notification-wrapper">
+            <div class="notification">
+              <span class="badge badge-pill">1</span>
+              <!-- notification-menu -->
+              <div class="notification_modal">
+                <span>Вам назначен новый <a href="#">курс</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="user_menu-avatar">
+            <img src="./img/avatar.png" alt="">
+          </div>
+          <div class="user_name align-self-center flex-grow-1">
+            <span>Иван Иванов</span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- content -->
+  <main>
+    <!-- current course -->
+    <section class="cc">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2>Мой текущий курс</h2>
+            <p class="cc-title">Основы кибербезопасности</p>
+            <p class="cc-descriprion">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugiat iste, mollitia in sunt pariatur vero dolorum ab maxime! Numquam voluptate deleniti excepturi quis nisi quisquam assumenda aspernatur dignissimos, sunt.
+            </p>
+            <div class="row">
+              <div class="col-4">
+                <span class="cc-time">15 минут</span>
+              </div>
+              <div class="col-4">
+                <span class="cc-module">1 модуль</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="cc-review">
+              <a href="#"><img src="./img/play.png" alt=""></a>
+              <p>Запустить курс</p>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- library courses -->
+    <section class="lc">
+      <div class="lc-bg_left"></div>
+      <div class="container">
+        <div class="wrapper-container">
+          <h2>Библиотека курсов</h2>
+          <div class="row lc-content">
+            <div class="lc-category btn-group" role="group">
+              <button class="btn active">Назначеные мне</button>
+              <button class="btn">Завершенные курсы</button>
+              <button class="btn">Все курсы</button>
+            </div>
+            <button class="add-btn--big"></button>
+            <div class="lc-sub_category btn-group" role="group">
+              <button class="btn active">Подкатегория 1</button>
+              <button class="btn">Подкатегория 2</button>
+              <button class="btn">Подкатегория 3</button>
+              <button class="btn">Подкатегория 4</button>
+              <button class="btn">Подкатегория 5</button>
+            </div>
+            <button class="add-btn--small"></button>
+            <div class="row m-0 justify-content-between w-100">
+              <!-- card active -->
+              <div class="col-6 mb-large">
+                <div class="lc-card d-flex flex-column">
+                  <div class="row justify-content-between lc-card-body">
+                    <div class="col-8">
+                      <h3>Противодействие <br> фишингу</h3>
+                      <div class="lc-card-link">
+                        <a class="lc-card-link-active" href="#"><img src="./img/play.png" alt="">Запустить курс</a>
+                        <a class="lc-card-link-disabled" href="#"><img src="./img/block.png" alt="">Этот курс вам не назначен</a>
+                        <a class="lc-card-link-completed" href="#"><img src="./img/completed.png" alt="">Вы успешно завершили этот курс!</a>
+                      </div>
+                    </div>
+                    <div class="col-4 lc-card-image d-flex">
+                      <img src="./img/card-1.png" alt="">
+                      <img src="./img/card-1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="lc-disabled-title">Если вы хотите пройти этот курс, <a href="#"> отправьте заявку</a> администратору</span>
+                    <span class="lc-progress-title col-4">Прогресс: <b>10%</b></span>
+                    <div class="lc-progress-completed col-11 justify-content-between">
+                      <a href="#">Пройти курс заново</a>
+                      <span>Ваш результат: <b>10 баллов</b></span>
+                    </div>
+                    <div class="col-11">
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <span class="lc-time">40 минут</span>
+                    </div>
+                    <div class="col-3">
+                      <span class="lc-module">6 модуль</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card completed -->
+              <div class="col-6 mb-large">
+                <div class="lc-card completed d-flex flex-column">
+                  <div class="row justify-content-between lc-card-body">
+                    <div class="col-8">
+                      <h3>Антивирусная <br>защита</h3>
+                      <div class="lc-card-link">
+                        <a class="lc-card-link-active" href="#"><img src="./img/play.png" alt="">Запустить курс</a>
+                        <a class="lc-card-link-disabled" href="#"><img src="./img/block.png" alt="">Этот курс вам не назначен</a>
+                        <a class="lc-card-link-completed" href="#"><img src="./img/completed.png" alt="">Вы успешно завершили этот курс!</a>
+                      </div>
+                    </div>
+                    <div class="col-4 lc-card-image d-flex">
+                      <img src="./img/card-2.png" alt="">
+                      <img src="./img/card-2-disabled.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="lc-disabled-title">Если вы хотите пройти этот курс, <a href="#"> отправьте заявку</a> администратору</span>
+                    <span class="lc-progress-title col-4">Прогресс: <b>10%</b></span>
+                    <div class="lc-progress-completed col-11 justify-content-between">
+                      <a href="#">Пройти курс заново</a>
+                      <span>Ваш результат: <b>10 баллов</b></span>
+                    </div>
+                    <div class="col-11">
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <span class="lc-time">40 минут</span>
+                    </div>
+                    <div class="col-3">
+                      <span class="lc-module">6 модуль</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card disabled -->
+              <div class="col-6 mb-large">
+                <div class="lc-card disabled d-flex flex-column">
+                  <div class="row justify-content-between lc-card-body">
+                    <div class="col-8">
+                      <h3>Парольная <br>защита</h3>
+                      <div class="lc-card-link">
+                        <a class="lc-card-link-active" href="#"><img src="./img/play.png" alt="">Запустить курс</a>
+                        <a class="lc-card-link-disabled" href="#"><img src="./img/block.png" alt="">Этот курс вам не назначен</a>
+                        <a class="lc-card-link-completed" href="#"><img src="./img/completed.png" alt="">Вы успешно завершили этот курс!</a>
+                      </div>
+                    </div>
+                    <div class="col-4 lc-card-image d-flex">
+                      <img src="./img/card-3.png" alt="">
+                      <img src="./img/card-3-disabled.png" alt="">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="lc-disabled-title">Если вы хотите пройти этот курс, <a href="#"> отправьте заявку</a> администратору</span>
+                    <span class="lc-progress-title col-4">Прогресс: <b>10%</b></span>
+                    <div class="lc-progress-completed col-11 justify-content-between">
+                      <a href="#">Пройти курс заново</a>
+                      <span>Ваш результат: <b>10 баллов</b></span>
+                    </div>
+                    <div class="col-11">
+                      <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3">
+                      <span class="lc-time">40 минут</span>
+                    </div>
+                    <div class="col-3">
+                      <span class="lc-module">6 модуль</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card add -->
+              <div class="col-6 mb-large">
+                <div class="lc-card--add"></div>
+              </div>
+
+            </div>
+            <div class="w-100">
+              <button class="btn show-all">Показать еще</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- statistics -->
+    <section class="stat">
+      <div class="container">
+        <h2>Статистика</h2>
+        <div class="row justify-content-between">
+          <div class="col-4 stat-item">
+            <div class="card-stat card-stat--appointed">
+              <h4>Курсов назначено</h4>
+              <span class="card-stat">5</span>
+            </div>
+          </div>
+          <div class="col-4 stat-item">
+            <div class="card-stat card-stat--completed">
+              <h4>Курсов завершено</h4>
+              <span class="card-stat">2</span>
+            </div>
+          </div>
+          <div class="col-4 stat-item">
+            <div class="card-stat card-stat--bal">
+              <h4>Средний бал по курсам</h4>
+              <span class="card-stat">4,45</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <a href="#"><img src="./img/footer-logo.png" alt=""></a>
+      <p>Все права защищены.</p>
+    </div>
+  </footer>
+
+
+  <!-- modal -->
+  <div class="modal modal-course" tabindex="-1" role="dialog" style='display: block;'>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex justify-content-between w-100">
+            <div class="d-inline-flex modal-btn-group align-items-center">
+              <span>Модули:</span>
+              <a href="#" class="btn completed">1</a>
+              <!-- need script!!! one class can't do it-->
+              <a href="#" class="btn btn-progress">
+                <div class="donut-chart">
+                  <div id="section1" class="clip">
+                    <div class="item"></div>
+                  </div>
+                  <div id="section2" class="clip">
+                    <div class="item"></div>
+                  </div>
+                  <div id="section3" class="clip" style="transform: rotate(0deg);">
+                    <div class="item" style='transform: rotate(60deg); background-color:#ff0b1b;'></div>
+                  </div>
+                  <div class="center">
+                    <span>2</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="btn active">3</a>
+              <a href="#" class="btn">4</a>
+              <a href="#" class="btn">5</a>
+            </div>
+            <div class="d-inline-flex align-items-center">
+              <button class="btn-panel restart"></button>
+              <button class="btn-panel full_size"></button>
+              <button class="btn-panel closed"></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <img src="./img/course_review.png" alt="">
+        </div>
+        <div class="progress">
+          <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+  var navbar = document.getElementsByClassName('navbar-container');
+  window.onscroll = function (e) {
+    if (navbar) {
+      navbar[0].style.top = window.pageYOffset + 'px';
+    }
+  }
+</script>
+<!-- script -->
+
+</html>

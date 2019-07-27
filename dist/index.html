@@ -8,7 +8,7 @@
   <!-- style -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./fonts/roboto.css">
+  <link rel="stylesheet" href="/fonts/roboto.css">
   <link rel="stylesheet" href="./css/style.css">
   <!-- style -->
 
@@ -21,7 +21,7 @@
 <body>
   <!-- header -->
   <header>
-    <div class="navbar-container fixed-top">
+    <div class="navbar-container position-absolute">
       <nav class="navbar">
         <a class="navbar-brand col-3 d-flex" href="#"><img src="./img/logo.png" alt=""></a>
         <form class="col-5 d-flex">
@@ -62,10 +62,10 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta fugiat iste, mollitia in sunt pariatur vero dolorum ab maxime! Numquam voluptate deleniti excepturi quis nisi quisquam assumenda aspernatur dignissimos, sunt.
             </p>
             <div class="row">
-              <div class="col-3">
+              <div class="col-4">
                 <span class="cc-time">15 минут</span>
               </div>
-              <div class="col-3">
+              <div class="col-4">
                 <span class="cc-module">1 модуль</span>
               </div>
             </div>
@@ -95,6 +95,7 @@
               <button class="btn">Завершенные курсы</button>
               <button class="btn">Все курсы</button>
             </div>
+            <button class="add-btn--big"></button>
             <div class="lc-sub_category btn-group" role="group">
               <button class="btn active">Подкатегория 1</button>
               <button class="btn">Подкатегория 2</button>
@@ -102,6 +103,7 @@
               <button class="btn">Подкатегория 4</button>
               <button class="btn">Подкатегория 5</button>
             </div>
+            <button class="add-btn--small"></button>
             <div class="row m-0 justify-content-between w-100">
               <!-- card active -->
               <div class="col-6 mb-large">
@@ -158,7 +160,7 @@
                     </div>
                     <div class="col-4 lc-card-image d-flex">
                       <img src="./img/card-2.png" alt="">
-                      <img src="./img/card-2.png" alt="">
+                      <img src="./img/card-2-disabled.png" alt="">
                     </div>
                   </div>
                   <div class="row">
@@ -283,8 +285,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-<script src="./js/main.js"></script>
+<script>
+var navbar = document.getElementsByClassName('navbar-container');
+window.onscroll = function (e) {
+  if (navbar) {
+    navbar[0].style.top = window.pageYOffset + 'px';
+  }
+}
+</script>
 <!-- script -->
 
 </html>
