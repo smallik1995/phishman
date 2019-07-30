@@ -1,0 +1,11 @@
+
+User-agent: *
+Disallow: /*css/
+Disallow: /*fonts/
+Disallow: /*js/
+Disallow: /*common.js
+Disallow: /*mail.php
+
+Host: https://www.remzona.ru
+
+
