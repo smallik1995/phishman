@@ -200,17 +200,6 @@ h4 {
 .user_name:hover {
   cursor: pointer;
 }
-@media (max-width: 1919px) {
-  .navbar {
-    max-width: 1336px;
-  }
-  .notification-wrapper {
-    margin-right: 15px;
-  }
-  .user_name {
-    padding-left: 0;
-  }
-}
 .cc {
   padding: 60px 0 45px;
 }
@@ -608,11 +597,6 @@ h4 {
   background-size: 100%;
   border: none;
   padding: 0;
-}
-@media (max-width: 1919px) {
-  .lc-card-body a {
-    font-size: 18px;
-  }
 }
 .stat {
   padding: 25px 0 50px;
