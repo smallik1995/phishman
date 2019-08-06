@@ -126,15 +126,15 @@ h4 {
   margin: auto;
 }
 .notification_modal {
-  font-size: 22px;
+  font-size: 14px;
   position: absolute;
-  top: 60px;
-  left: 70px;
+  top: 40px;
+  left: 50px;
   -webkit-transform: translate(-100%);
   -ms-transform: translate(-100%);
   transform: translate(-100%);
   background: #ffffff;
-  padding: 10px 20px;
+  padding: 5px 15px;
   -webkit-box-shadow: 0 2px 4px 1px #afb1b2;
   box-shadow: 0 2px 4px 1px #afb1b2;
   -webkit-border-radius: 5px;
@@ -656,7 +656,7 @@ h4 {
 }
 .modal-add-form {
   pointer-events: auto;
-  padding: 50px 70px 90px;
+  padding: 25px 35px 30px;
   background: #ffffff;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -666,35 +666,35 @@ h4 {
   margin-right: 0;
 }
 .modal-add-form > p {
-  font-size: 22px;
-  margin-bottom: 30px;
+  font-size: 11px;
+  margin-bottom: 15px;
   font-weight: 300;
 }
 .modal-add-form > p.form-title {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 .modal-add-form > p.form-title::after {
   content: '';
   display: block;
-  width: 120px;
+  width: 60px;
   height: 2px;
-  margin-top: 10px;
+  margin-top: 5px;
   background-color: #ff0b1b;
 }
 .modal .progress {
-  height: 5px;
+  height: 3px;
   background-color: transparent;
 }
 .modal-course > .modal-dialog {
-  max-width: 960px;
+  max-width: 710px;
 }
 .modal-add > .modal-dialog {
-  max-width: 960px;
+  max-width: 600px;
 }
 .modal-content {
-  padding: 20px 30px;
+  padding: 10px 12.5px;
 }
 .modal-body {
   padding: 0;
@@ -712,18 +712,19 @@ h4 {
   margin-bottom: 15px;
 }
 .modal-btn-group > span {
-  font-size: 28px;
+  font-size: 14px;
   font-weight: 500;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .modal-btn-group > .btn {
   border: 1px solid #afb1b2;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   padding: 0;
-  line-height: 28px;
-  width: 30px;
-  margin-right: 10px;
+  line-height: 14px;
+  width: 15px;
+  margin-right: 5px;
+  font-size: 9px;
 }
 .modal-btn-group > .btn:last-of-type {
   margin-right: 0;
@@ -732,14 +733,14 @@ h4 {
   border: none;
 }
 .modal-btn-group > .btn.active {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 50px;
-  width: 50px;
+  line-height: 25px;
+  width: 25px;
   border: none;
-  -webkit-box-shadow: 0 0 5px 1px #afb1b2;
-  box-shadow: 0 0 5px 1px #afb1b2;
-  margin: 0 15px 0 5px;
+  -webkit-box-shadow: 0 0 3px 1px #afb1b2;
+  box-shadow: 0 0 3px 1px #afb1b2;
+  margin: 0 5px 0 0;
 }
 .modal-btn-group > .btn.completed {
   position: relative;
@@ -750,8 +751,10 @@ h4 {
   background: url(../img/module_complete_icon.png) no-repeat center, #ff0b1b;
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
+  -webkit-background-size: 60% 60%;
+  background-size: 60%;
+  width: 15px;
+  height: 15px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
   left: -1px;
@@ -759,34 +762,39 @@ h4 {
   z-index: 2;
 }
 .btn-panel {
-  width: 35px;
-  height: 35px;
+  width: 17.5px;
+  height: 17.5px;
   border: none;
-  margin-right: 10px;
+  margin-right: 6px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 .btn-panel:last-of-type {
   margin-right: 0;
-  -webkit-background-size: contain;
-  background-size: contain;
 }
 .btn-panel.restart {
   background: url('../img/restart_course.png') no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
 }
 .btn-panel.full_size {
   background: url('../img/full_course.png') no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
 }
 .btn-panel.closed {
   background: url('../img/exit_course.png') no-repeat center;
+  -webkit-background-size: 100% 100%;
+  background-size: 100%;
 }
 .donut-chart {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
   margin: 0;
   -webkit-border-radius: 100%;
   border-radius: 100%;
+  font-size: 9px;
 }
 .donut-chart .center {
   background: #fff;
@@ -810,7 +818,7 @@ h4 {
 .clip {
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  clip: rect(0px, 30px, 30px, 15px);
+  clip: rect(0px, 15px, 15px, 7.5px);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -818,7 +826,7 @@ h4 {
 .item {
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  clip: rect(0px, 15px, 30px, 0px);
+  clip: rect(0px, 7.5px, 15px, 0px);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -846,7 +854,7 @@ h4 {
   transform: rotate(180deg);
 }
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 .form-group-file {
   position: relative;
@@ -866,21 +874,24 @@ h4 {
   right: 0;
   top: 0;
   background-color: #ffffff;
-  width: 45px;
+  width: 25px;
   height: 100%;
   border: 1px solid #ff0b1b;
   -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
   background-image: url('../img/arrow.png');
   background-repeat: no-repeat;
+  -webkit-background-size: 35% 35%;
+  background-size: 35%;
   background-position: center;
   z-index: 1;
 }
 .form-group > a {
   color: #ff0b1b;
-  padding: 14px 0;
+  padding: 7px 0;
   line-height: 1.2;
-  margin-left: 15px;
+  margin-left: 10px;
+  font-size: 9px;
 }
 .form-group > a:after {
   content: '';
@@ -896,30 +907,33 @@ h4 {
   -webkit-appearance: none;
   background-image: url(../img/select.png);
   background-repeat: no-repeat;
-  background-position: calc(100% - 10px) center;
+  background-position: calc(100% - 5px) center;
   color: #d3d3d3;
 }
 .form-group-select.selected {
   color: #ff0b1b;
 }
 .form-group > label {
-  min-width: 250px;
-  margin: 0 10px 0 0;
-  line-height: 50px;
-  font-size: 22px;
+  min-width: 125px;
+  margin: 0 5px 0 0;
+  line-height: 25px;
+  font-size: 11px;
   font-weight: 300;
 }
 .form-group > label > b {
   color: #ff0b1b;
 }
 .form-group-input {
+  font-size: 11px;
   background-color: #f3f5f6;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #e2e2e2;
-  padding: 5px 10px;
+  padding: 0px 9px;
   font-weight: 300;
-  min-width: 300px;
+  min-width: 155px;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 .form-group-input::-webkit-input-placeholder {
   color: #d3d3d3;
@@ -930,22 +944,77 @@ h4 {
   margin-bottom: 0;
 }
 .add-category {
-  height: 50px;
-  width: 50px;
+  height: 25px;
+  width: 25px;
   background: url(../img/plus-cat.png) no-repeat;
-  -webkit-background-size: 100% 100%;
-  background-size: 100%;
+  -webkit-background-size: contain;
+  background-size: contain;
   border: none;
   padding: 0;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .btn-form-submit {
   border: 1px solid red;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-size: 24px;
   font-weight: 300;
-  background: white;
-  padding: 11px 20px;
-  min-width: 250px;
+  background: #ffffff;
+  padding: 9px;
+  min-width: 125px;
+  font-size: 12px;
+}
+.modal-card-images > img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.modal-course .modal-body {
+  padding: 15px 10px;
+  height: 375px;
+}
+.modal-course .modal-body > .row {
+  height: 100%;
+}
+.modal-course p.form-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 7px;
+}
+.modal-course p.form-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 5px;
+  background-color: #ff0b1b;
+}
+.modal-course p.form-name {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.modal-card-btn > a {
+  margin-bottom: 15px;
+  width: 35px;
+  display: block;
+  margin: auto auto 10px;
+}
+.modal-card-btn > a > img {
+  width: 100%;
+  height: auto;
+}
+.modal-card-btn > p {
+  font-size: 8px;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-align: center;
+}
+.modal-card-logo {
+  height: 45px;
+  margin-bottom: 55px;
+}
+.modal-card-logo > img {
+  height: 100%;
+  width: auto;
 }
