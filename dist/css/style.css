@@ -405,7 +405,7 @@ h4 {
 }
 .lc-card.completed .lc-progress-completed > a::before {
   content: '';
-  background: url(../img/restart.png) no-repeat;
+  background: url(../img/restart.svg) no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
   display: block;
@@ -818,7 +818,7 @@ h4 {
 .clip {
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  clip: rect(0px, 15px, 15px, 7.5px);
+  clip: rect(0px, 15px, 15px, 7px);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -871,18 +871,18 @@ h4 {
 .form-group-file-load {
   margin-left: auto;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -1px;
+  top: -1px;
   background-color: #ffffff;
-  width: 25px;
-  height: 100%;
+  width: 26px;
+  height: calc(100% + 2px);
   border: 1px solid #ff0b1b;
   -webkit-border-radius: 0 5px 5px 0;
   border-radius: 0 5px 5px 0;
-  background-image: url('../img/arrow.png');
+  background-image: url('../img/arrow.svg');
   background-repeat: no-repeat;
-  -webkit-background-size: 35% 35%;
-  background-size: 35%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50%;
   background-position: center;
   z-index: 1;
 }
@@ -905,7 +905,7 @@ h4 {
 }
 .form-group-select {
   -webkit-appearance: none;
-  background-image: url(../img/select.png);
+  background-image: url('../img/select.png');
   background-repeat: no-repeat;
   background-position: calc(100% - 5px) center;
   color: #d3d3d3;
@@ -946,9 +946,9 @@ h4 {
 .add-category {
   height: 25px;
   width: 25px;
-  background: url(../img/plus-cat.png) no-repeat;
-  -webkit-background-size: contain;
-  background-size: contain;
+  background: url('../img/plus-cat.svg') no-repeat center;
+  -webkit-background-size: 85% 85%;
+  background-size: 85%;
   border: none;
   padding: 0;
   margin-left: 5px;
