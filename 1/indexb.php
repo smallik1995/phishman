@@ -1,4 +1,4 @@
-<?php setcookie("pixel", $_GET["pixel"], time()+606024); ?>
+<?php setcookie("pixel", $_GET["2638034736425261"], time()+606024); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
